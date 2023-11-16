@@ -35,12 +35,11 @@ ul {
     display: flex;
 }
 
-li {
+.navbarright li {
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    padding: 0px 6px;
     margin: 0px 10px;
 }
 
@@ -249,7 +248,6 @@ a {
 
 
 
-
 /* foot css */
 .foot {
     padding-top: 50px;
@@ -288,27 +286,9 @@ a {
     font-weight: 600;
 }
 
-
-
-
-
-
-
-/* nav media queri */
-@media only screen and (max-width: 460px) {
-    nav {
-        display: block;
-    }
+.second-foot li {
+    margin: 0 10px;
 }
-
-@media only screen and (max-width: 715px) {
-    .navbarright {
-        display: none;
-    }
-}
-
-
-
 
 
 /* main-section media queri */
@@ -317,90 +297,105 @@ a {
         display: flex;
         flex-wrap: wrap;
     }
-}
 
-@media only screen and (max-width: 460px) {
+    nav {
+        display: block;
+    }
+
     .grid {
         display: flex;
         flex-wrap: wrap;
     }
-}
 
-@media only screen and (max-width: 460px) {
     .box {
         display: flex;
         flex-direction: column;
     }
-}
 
+    main,
+    .suscrib-container {
+        margin: 0 10%;
+    }
 
-
-
-
-
-/* suscribe-container media queri */
-@media only screen and (max-width: 460px) {
     .suscrib-container {
         display: flex;
         flex-wrap: wrap;
     }
-}
 
-@media only screen and (max-width: 460px) {
     .newsletter-P {
         margin-bottom: 20px;
     }
-}
 
-@media only screen and (max-width: 460px) {
     .suscribe-form {
         display: flex;
     }
-}
 
-@media only screen and (max-width: 460px) {
     .suscribe-form {
         padding: 30PX 35PX;
         background-color: white;
         border-radius: 14px;
-        width: 42vw;
+        width: 100%;
         text-align: center;
-        color: black
+        color: black;
+        margin: 0 0 20px 0;
+    }
+
+    .navbarright {
+        display: none;
     }
 }
 
-
-
-
-
-
-/* foot media queri */
-@media only screen and (max-width: 460px) {
-    .foot {
-        display: flex;
-        flex-wrap: wrap;
-    }
-}
 
 @media only screen and (max-width:715px) {
+
     .second-foot {
         display: block;
         margin-top: 30px;
         width: 80vw;
     }
+
+
+    .foot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 10%;
+    }
+
+    .grid {
+        align-items: center;
+    }
+
+    .second-foot ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .second-foot li {
+        margin: 0 9px;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    @media screen and (max-width:647px){
+        .fixedbtn {
+            display: none;
+        }
+    }
+
 }
 
-@media only screen and (max-width: 460px) {
-    .foot {
-        margin: 0 10%;
+
+@media screen and (max-width:1365px){
+    .blu {
+        margin-bottom: 8px;
     }
 }
 
-
-
-/* corner btn media queri */
-@media only screen and (max-width:715px) {
-    .fixedbtn {
-        display: none;  
+@media screen and (max-width:647px){
+    .navbarright {
+        display: none;
     }
 }
