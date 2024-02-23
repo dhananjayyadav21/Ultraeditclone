@@ -273,9 +273,7 @@ a {
     right: 20px;
 }
 
-.fixedbtn img {
-    margin-top: 6px;
-}
+
 
 
 .first-foot {
@@ -398,7 +396,7 @@ a {
     }
 }
 
-@media screen and (max-width:647px){
+@media screen and (max-width:800px){
     .navbarright {
         display: none;
     }
